@@ -2,6 +2,13 @@ const birthDate = document.querySelector("#dob");
 const luckyNumber = document.querySelector("#lucky-number");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector(".result");
+const closeButton = document.querySelector("#close-button") 
+const privacyNote = document.querySelector(".privacy-note")
+
+closeButton.addEventListener("click",function closePrivacyNote(){
+    privacyNote.style.display="none";
+})
+
 
 checkButton.addEventListener("click", function checkBirthDay(){
 
